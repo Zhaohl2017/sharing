@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "8988c996-9d08-4a07-ab4b-04fd96494401",
+		"name": "acc-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/acc/trx/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/acc/trx/add?acc=8872838522&trxAmt=222&descr=FUND TRANSFER&trxDate=8888-88-88&trxTime=12:12:12&custId=2222",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"acc",
+						"trx",
+						"add"
+					],
+					"query": [
+						{
+							"key": "acc",
+							"value": "8872838522"
+						},
+						{
+							"key": "trxAmt",
+							"value": "222"
+						},
+						{
+							"key": "descr",
+							"value": "FUND TRANSFER"
+						},
+						{
+							"key": "trxDate",
+							"value": "8888-88-88"
+						},
+						{
+							"key": "trxTime",
+							"value": "12:12:12"
+						},
+						{
+							"key": "custId",
+							"value": "2222"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/acc/trx/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/acc/trx/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"acc",
+						"trx",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/acc/trx/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"descr\": \"FUND TRANSFER he\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/acc/trx/update/753?id=753",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"acc",
+						"trx",
+						"update",
+						"753"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "753"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/acc/trx/getAccountTrxByCusIDAccnoDescr",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/acc/trx/getAccountTrxByCusIDAccDescr?cusId=2222&acc=8872838520&descr=FUND TRANSFER OH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"acc",
+						"trx",
+						"getAccountTrxByCusIDAccDescr"
+					],
+					"query": [
+						{
+							"key": "cusId",
+							"value": "2222"
+						},
+						{
+							"key": "acc",
+							"value": "8872838520"
+						},
+						{
+							"key": "descr",
+							"value": "FUND TRANSFER OH"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

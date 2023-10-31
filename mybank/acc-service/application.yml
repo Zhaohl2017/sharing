@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: acc-service
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: job
+        input:
+          destination: job

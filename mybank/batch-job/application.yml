@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: batch-job
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: job
+        input:
+          destination: job

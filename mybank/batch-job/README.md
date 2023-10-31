@@ -16,7 +16,12 @@ Running time:
     . JDK: 20.0.2
 
 ### Run
+#### Gradle
 ```
 ./gradlew bootRun
+
 ```
-Button: Run/Debug
+#### Java
+```
+Click Run/Debug button
+```

@@ -1,6 +1,6 @@
 # Read me for all the 3 projects
 
-These projects created under Spring Boot framework &MySQL database.
+These projects created under Spring Boot framework & MySQL database.
 
 ## 1. batch-job
 
@@ -14,8 +14,8 @@ A RESTFUL API service to provide various of db operation with authentication.
 
 A RESTFUL API service to provide various of db operation without authentication.
 
-### NOTE:
-* Authentication not working yet, it will block the REST Api call all the time. This should be due to the framework issue because it is the latest one not stable yet. Due to tight timeline, so we just provide the related codes here for a checking purpose.
+#### NOTE:
+* Authentication feature not up yet, it will block the REST Apis call all the time. This should be due to the framework issue because it is the latest one not stable yet. Due to tight timeline, so we just provide the related codes here for a checking purpose.
 
 ## Technology
 
